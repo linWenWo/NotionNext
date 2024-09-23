@@ -62,7 +62,7 @@ export async function getStaticProps({ params: { page } }) {
       if (post.password && post.password !== '') {
         continue
       }
-      post.blockMap = await getPostBlocks(post.id, 'slug', POST_PREVIEW_LINES)
+      post.blockMap = await getPostBlocks(post.id, 'Multi-select', POST_PREVIEW_LINES)
     }
   }
 
